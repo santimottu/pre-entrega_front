@@ -1,0 +1,352 @@
+*{ /* Selector universal */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /* quita  los márgenes por defecto del navegador */
+
+.header {
+    background-color: bisque;
+    padding: 20p 0px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content:space-between;
+    align-items:start;
+    padding: 16px 32px;
+    background-color: rgb(227, 195, 125);
+}
+
+.logo {
+    width: 100px; /* ancho del logo */
+    height: 100px; /* altura del logo */
+    border-radius: 50%;
+    border: 2px solid rgb(227, 195, 125);
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    background-color: rgb(237, 220, 121);
+    padding: 8px;
+    gap: 25px; /* separación entre items */
+    border-radius: 16px;
+}
+
+.menu li a {
+    color: gray;
+    font-weight: bold;
+    text-decoration: none; /* El subrayado es de los enlaces <a> (no viene de los <li>) por eso se aplica estilo sobre <a> */
+}
+
+.carrito li a {
+    color: black;
+}
+
+.introduccion {
+    background-color: antiquewhite;
+    padding: 20px 10px;        
+}
+
+.introduccion-content {
+   text-align: center;
+   align-items: flex-end;       
+}
+
+.introduccion-content h2 {
+   color: rgb(227, 195, 155);
+   margin-bottom: 16px;
+   font-size: 25px;
+   font-style: italic;
+}
+
+.tags {
+    color: grey;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tag {
+    display: inline-flex;
+    padding: 4px 12px;
+    background-color: rgb(237, 220, 121);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 16px;
+    width: 30p;
+}
+
+#btn {
+    background-color: rgb(227, 195, 155);
+    padding: 6px 16px;
+    border: 2px solid rgb(227, 195, 155);
+    border-radius: 16px;
+    margin-top: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s; color: 0.3s;
+}
+
+#btn:hover {
+    background-color: white;
+    color: rgb(213, 172, 8);
+}
+
+.recursos {
+    background-color: darkkhaki;
+    padding: 20px 10px;
+    text-align: center;
+    margin-left: 1px;
+    margin-right: 1px;
+    border-radius: 10px;
+}
+
+.recursos h1 {
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+.tarjetas {
+  margin-top: 20px;
+}
+
+.tarjeta {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    max-width: 250px;
+    height: 340px;
+    margin: 1%;
+    padding: 2rem;
+    border: 2px solid rgb(184, 154, 6);
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px bisque;
+}
+
+.tarjetas div:hover {
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tarjetas_tienda div:hover {
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.destacado {
+    width: 120px;
+    height: 160px;
+    border-radius: 8px;
+}
+
+.card-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.card-producto {
+    font-size: 0.85rem;
+    color: #585e69;
+    margin-top: 5px;
+}
+
+.card-precio {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #2b3139;
+    line-height: 1.6;
+    font-style: oblique;
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 20px;
+}
+
+.btn-compra {
+    background-color: yellowgreen;
+    color: whitesmoke;
+    font-style: oblique;
+    padding: 4px 12px;
+    border: 2px solid yellowgreen;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background 0.3s; color: 0.3s;
+}
+
+.btn-compra:hover {
+    background-color: whitesmoke;
+    color: yellowgreen;
+}
+
+.tarjeta-uno {
+    background-color: rgba(240, 222, 600, 0.4);
+    /* background-image: url(../img/Jabon_liquido.jpeg); */
+}
+
+.tarjeta-dos {
+    background-color: rgba(250, 212, 400, 0.4);
+}
+
+.tarjeta-tres {
+    background-color: rgba(260, 202, 200, 0.4);
+}
+
+.banner {
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.4);
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-img {
+    /* background-image: url(img/velas/Vela-Breda_31.jpeg); */
+    justify-content: flex-start;
+    height: 20vh ;
+}
+
+.banner-txt {
+    font-style: italic;
+    padding-right: 20px;
+    text-align: end;
+}
+
+.banner h2 {
+    padding-bottom: 20px;
+}
+
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    padding: 20px 10px;
+    gap: 15px; /* espacio entre elementos */
+    align-items: center;        
+}
+
+.news {
+    font-style: italic;
+}
+
+.promo {
+    color: rgb(230, 115, 8);
+    font-weight: bold;
+}
+
+.btn-news {
+    background-color: rgb(227, 195, 155);
+    padding: 5px 10px;
+    border: 2px solid rgb(227, 195, 155);
+    border-radius: 16px;
+    margin-top: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s; color: 0.3s;
+    width: 90px;
+}
+
+.btn-news:hover {
+background-color: white;
+color: rgb(213, 172, 8);
+}
+
+input {
+    display: block;
+    width: 400px;
+    padding: 5px 10px;
+    border: none;
+}
+
+input::placeholder {
+    color: rgba(128, 128, 128, 0.5);
+    font-size: 2px;
+    font-style: italic;
+    padding: 5px 10px;
+}
+
+label {
+    display: block;
+    font-style: oblique;
+    padding-right: 5px;
+    padding: 5px 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content:space-between;
+    align-items:start;
+    padding: 16px 32px;
+    background-color: rgb(227, 195, 125);
+}
+
+.enc-datos {
+    padding-bottom: 10px;
+}
+
+.datos {
+    color: gray;
+    font-size: 0.8rem;
+    font-style: oblique;
+}
+
+.icono a i {
+color: rgb(42, 165, 91);
+}
+
+.tarjetas_tienda {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px;
+  padding: 10px;
+}
+
+.contacto {
+    background-color: antiquewhite;
+    padding: 10px 10px;
+}
+
+textarea {
+    width: 50%;
+    height: 90px;
+    border: none;
+    }
+
+.ubicacion {
+    background-color: rgba(250, 235, 215, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.mobile {
+    display: none;
+    color: black;
+}
+
+/* Declaración de medias queries al final*/
+@media (max-width: 768px) {
+  /* Mostrar menú normal */
+    .menu {
+    display: none;
+}
+  /* Ocultar menú en versión mobile */
+    .mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mobile a i {
+        color: black;
+        padding-left: 10px;
+    }
+    .newsletter {
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+@media (max-width: 768px) {
+    .tarjetas_tienda {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
